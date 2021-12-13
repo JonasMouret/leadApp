@@ -8,3 +8,12 @@ export const createMessage = (msg) => {
         payload: msg,
     };
 }
+
+// Action to return ERRORS
+
+export const returnErrors = (msg, status) => {
+    return {
+        type: "GET_ERRORS",
+        payload: { msg, status },
+    };
+}
